@@ -1,12 +1,13 @@
-﻿namespace Daily_Diary
+﻿using System.Globalization;
+
+namespace Daily_Diary
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-
-
+            DailyDiary diary = new DailyDiary("data.txt");
+            diary.Run();
         }
     }
 }
